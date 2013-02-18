@@ -6,7 +6,7 @@
 
 from pluggdapps.plugin import Interface
 
-__all__ = [ 'ITTLBreadCrumbs', ]
+__all__ = [ 'ITTLBreadCrumbs', 'ITTLFooter' ]
 
 class ITTLBreadCrumbs( Interface ):
     """Interface for template plugins providing breadcrumb navigation."""
@@ -21,6 +21,22 @@ class ITTLBreadCrumbs( Interface ):
         ``breadmenu``,
             Map of breadcrumb name, provided in ``navigate`` attribute, and a
             list of tuple (name, url). Each tuple is rendered as a menu-item.
+
+        Optional keyword arguments,
+
+        ``id``,
+            If specified will be used as **id** attribute for the widget node.
+        """
+
+
+class ITTLFooter( Interface ):
+    """Interface to render pluggdapps official footer."""
+
+    def render( counts, **kwargs ):
+        """Generate and return HTML pluggdapps footer.
+
+        ``counts``,
+            A dictionary of, number of interfaces and number plugin count.
 
         Optional keyword arguments,
 

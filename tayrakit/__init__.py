@@ -9,7 +9,8 @@ from tayra import loadttls
 __version__ = '0.3dev'
 
 template_plugins = [
-    'tayrakit:plugins/tbreadcrumbs.ttl'
+    'tayrakit:plugins/tbreadcrumbs.ttl',
+    'tayrakit:plugins/pluggdapps_footer.ttl'
 ]
 
 def package( pa ) :
