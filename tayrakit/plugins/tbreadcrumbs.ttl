@@ -23,7 +23,7 @@
           $('.menu', this).css('visibility', 'hidden');
         })
       })
-
+    
     <style scoped text/css>
       ul.tbreadcrumbs {
         font-size : medium;
@@ -54,8 +54,8 @@
       ul.tbreadcrumbs ul.menu li.item:hover {
         background-color : #888;
       }
-
-
+    
+         
 @interface ITTLBreadCrumbs.default_settings( self ):
   :py:
   ds = h.ConfigDict()
