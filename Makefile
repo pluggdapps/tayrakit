@@ -34,3 +34,4 @@ clean :
 	rm -rf `find ./ -name "*.pyc"`;
 	rm -rf `find ./ -name "yacctab.py"`;
 	rm -rf `find ./ -name "lextab.py"`;
+	rm -rf tayrakit/plugins/*.ttl.py
