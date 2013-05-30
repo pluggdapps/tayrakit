@@ -37,11 +37,8 @@ push-github:
 	hg bookmark -f -r default master
 	hg push https://git@github.com:prataprc/tayrakit.git
 
-cleandoc :
-	rm -rf docs/_build/*
-
 clean :
-	rm -rf build;
+	rm -rf docs/_build;
 	rm -rf dist;
 	rm -rf tayrakit.egg-info/;
 	rm -rf `find ./ -name parsetyrtab.py`;

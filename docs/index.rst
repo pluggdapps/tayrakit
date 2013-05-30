@@ -1,22 +1,24 @@
-.. tayrakit documentation master file, created by
-   sphinx-quickstart on Thu May 30 18:07:11 2013.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
+Tayrakit is a browser toolkit using Tayra templating language. Most popular
+toolkits are written entirely as javascript libraries that are normally fetched
+when a page gets loaded. Tayrakit adapts the opposite way. Widgets,
+also called as template plugins, are authored using a templating language so
+that html parts are kept as HTML, css parts are kept as CSS and JavaScript is
+used only where it is required - for event callbacks :)
 
-Welcome to tayrakit's documentation!
-====================================
+The toolkit is under development - you can hack the code, contribute back with
+`github <https://github.com/prataprc/tayrakit>`_.
 
-Contents:
+Related links
+-------------
 
-.. toctree::
-   :maxdepth: 2
+* `Package documentation <http://pythonhosted.org/tayrakit/>`_.
+* `Changelog <https://github.com/prataprc/tayrakit/blob/master/CHANGELOG.rst>`_.
+* `Roadmap <https://github.com/prataprc/tayrakit/blob/master/TODO.rst>`_.
 
+.. include:: contents.rst.inc
 
-
-Indices and tables
-==================
+If you can't find the information you're looking for, have a look at the
+index or try to find it using the search function:
 
 * :ref:`genindex`
-* :ref:`modindex`
 * :ref:`search`
-
