@@ -9,10 +9,13 @@ from   setuptools import setup, find_packages
 from   os.path    import abspath, dirname, join
 
 here = abspath( dirname(__file__) )
-LONG_DESCRIPTION = open( join( here, 'README.rst' )).read(
-                       ).replace(':class:`', '`'
-                                ).replace(':mod:`', '`'
-                                         ).replace(':meth:`', '`')
+try :
+    LONG_DESCRIPTION = open( join( here, 'README.rst' )).read(
+                           ).replace(':class:`', '`'
+                                    ).replace(':mod:`', '`'
+                                             ).replace(':meth:`', '`')
+except :
+    LONG_DESCRIPTION = ''
 
 version = re.compile( 
             r".*__version__[ ]*=[ ]*'(.*?)'",
@@ -49,8 +52,8 @@ setup(
         ]
     },
     install_requires=[                      # setuptools
-        'ply>=3.4',
-        'pluggdapps>=0.2dev',
+        'tayra>=0.42',
+        'pluggdapps>=0.41dev',
     ],
     extras_require={},                      # setuptools
     setup_requires={},                      # setuptools
@@ -62,11 +65,11 @@ setup(
     requires='',
     obsoletes='',
 
-    author='Pratap R Chakravarthy',
+    author='prataprc',
     author_email='prataprc@gmail.com',
-    maintainer='Pratap R Chakravarthy',
+    maintainer='prataprc',
     maintainer_email='prataprc@gmail.com',
-    url='http://tayrakit.pluggdapps.com',
+    url='http://pythonhosted.org/tayrakit',
     download_url='',
     license='General Public License',
     description=description,
