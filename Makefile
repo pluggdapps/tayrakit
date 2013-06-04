@@ -35,7 +35,7 @@ push-bitbucket:
 
 push-github:
 	hg bookmark -f -r default master
-	hg push https://git@github.com:prataprc/tayrakit.git
+	hg push git+ssh://git@github.com:prataprc/tayrakit.git
 
 clean :
 	rm -rf docs/_build;
