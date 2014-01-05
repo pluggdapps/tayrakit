@@ -6,7 +6,7 @@
 
 from tayra import loadttls
 
-__version__ = '0.21dev'
+__version__ = '0.22dev'
 
 template_plugins = [
     'tayrakit:plugins/tbreadcrumbs.ttl',
